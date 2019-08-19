@@ -38,8 +38,7 @@ export const reducers = combineReducers({ repos });
 
 // store.js
 export function configureStore(initialState = {}) {
-    const store = createStore(reducers, initialState, applyMiddleware(thunk));
-    return store;
+    return createStore(reducers, initialState, applyMiddleware(thunk));
 }
 
 export const store = configureStore();
